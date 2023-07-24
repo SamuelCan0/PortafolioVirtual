@@ -1,0 +1,128 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: url(../img/code.png) center no-repeat fixed;
+
+}
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: width 2s;
+}
+
+#sidebar.active{
+    left: -300px;
+}
+
+#sidebar ul li{
+    color: rgba(230, 230, 230, 0.9);
+    text-align: center;
+    border-bottom: 1px solid rgba(45, 172, 171, 0.3);
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.item{
+    transition: all 300ms linear;
+}
+
+.item a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.item:hover{
+    background-color: rgba(45, 172, 171, 1);
+    width: 310px;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 125px;
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 330px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 35px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid white;
+}
+
+#contenido{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 300px;
+    z-index: -1;
+}
+
+#contenido.active{
+    left: 0;
+}
+
+.section{
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+}
+
+.section p{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.tarjeta{
+    background-color: rgba(5, 66, 75, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 0 4px 8px rgba(27, 91, 88, 0.4);
+}
+
+.tarjeta p{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+@media (max-width: 636px) {
+    #sidebar{
+        left: -300px;
+    }
+
+    #sidebar.active{
+        left: 0px;
+    }
+
+    #contenido{
+        z-index: -1;
+        left: 0;
+    }
+  }
