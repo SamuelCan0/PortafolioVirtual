@@ -5,4 +5,6 @@ btnToggle.addEventListener('click',function () {
     document.getElementById('acercaDe').classList.toggle('active')
     document.getElementById('experiencia').classList.toggle('active')
     document.getElementById('formacion').classList.toggle('active')
+    document.getElementById('proyectos').classList.toggle('active')
+    document.getElementById('habilidades').classList.toggle('active')
 })
