@@ -8,7 +8,7 @@
 
 body{
     background: url(../img/code.png) center no-repeat fixed;
-
+    width: 100%;
 }
 
 #sidebar{
@@ -85,23 +85,23 @@ body{
 }
 
 #acercaDe.active{
-    width: 100%;
+    width: 96%;
 }
 
 #experiencia.active{
-    width: 100%;
+    width: 96%;
 }
 
 #formacion.active{
-    width: 100%;
+    width: 96%;
 }
 
 #proyectos.active{
-    width: 100%;
+    width: 96%;
 }
 
 #habilidades.active{
-    width: 100%;
+    width: 96%;
 }
 
 
@@ -186,11 +186,38 @@ body{
     padding-left: 35px;
 }
 
+.image-container {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.image-item {
+    width: calc(16.6% - 20px);
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+.image-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+  }
+
+.image-text {
+    margin-top: 5px;
+    font-size: 14px;
+  }
 
 
 @media (max-width: 636px) {
     #sidebar{
         left: -300px;
+        background: rgb(26, 26, 26)
     }
 
     #sidebar.active{
@@ -200,5 +227,30 @@ body{
     #contenido{
         z-index: -1;
         left: 0;
+        flex: content;
+    }
+
+    #acercaDe{
+        width: 96%;
+    }
+    
+    #experiencia{
+        width: 96%;
+    }
+    
+    #formacion{
+        width: 96%;
+    }
+    
+    #proyectos{
+        width: 96%;
+    }
+    
+    #habilidades{
+        width: 96%;
+    }
+
+    .image-item {
+        width: calc(33% - 20px);
     }
   }
