@@ -7,4 +7,5 @@ btnToggle.addEventListener('click',function () {
     document.getElementById('formacion').classList.toggle('active')
     document.getElementById('proyectos').classList.toggle('active')
     document.getElementById('habilidades').classList.toggle('active')
+    document.getElementById('certificados').classList.toggle('active')
 })
